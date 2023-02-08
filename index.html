@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="main">
+      <div class="card">
+        <div class="login-box">
+          <h2>Tip Calculator</h2>
+          <form>
+            <div class="user-box">
+              <input
+                type="text"
+                id="noOfPeople"
+                name=""
+                required=""
+                placeholder="1-10"
+                onkeyup="calculateBill()"
+              />
+              <label>Person Count</label>
+            </div>
+            <div class="user-box">
+              <input
+                type="text"
+                name=""
+                id="billTotalInput"
+                required=""
+                placeholder="$0.00"
+                onkeyup="calculateBill()"
+              />
+              <label>Total Bill</label>
+            </div>
+            <div class="user-box">
+              <input
+                type="text"
+                name=""
+                id="tipInput"
+                required=""
+                placeholder="10%"
+                onkeyup="calculateBill()"
+              />
+              <label>Tip Percentage</label>
+            </div>
+
+            <!--           <div class="user-box">
+            <input type=" " name="" required="" value="$0.00" id="perPersonTotal">
+            <label> Bill Per Person</label>
+          </div> -->
+            <div class=" ">
+              <h4 class="output">Total Bill</h4>
+              <p id="totalBillAmount" class="output"></p>
+              <h4 class="output">Bill Per Person</h4>
+              <p class="output" id="PerPersonBill"></p>
+            </div>
+
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Pay Bill
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
